@@ -15,4 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_ivan.mk
+    $(LOCAL_DIR)/omni_ivan.mk
+
+COMMON_LUNCH_CHOICES := omni_ivan-eng

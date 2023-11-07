@@ -18,15 +18,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit from denniz device
+# Inherit from ivan device
 $(call inherit-product, device/oneplus/ivan/device.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ivan
-PRODUCT_NAME := twrp_ivan
+PRODUCT_NAME := omni_ivan
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus Nord CE 2 5G
 PRODUCT_MANUFACTURER := OnePlus

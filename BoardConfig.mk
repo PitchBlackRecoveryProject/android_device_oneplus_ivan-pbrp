@@ -18,6 +18,8 @@ DEVICE_PATH := device/oneplus/ivan
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -133,3 +135,8 @@ TW_EXCLUDE_APEX := true
 TW_NO_HAPTICS := true
 TW_Y_OFFSET := 115
 TW_H_OFFSET := -115
+
+# PBRP specific build flags
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
